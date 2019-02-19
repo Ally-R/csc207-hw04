@@ -4,11 +4,13 @@ public class Organism {
   // +--------+------------------------------------------------------
   // | Fields |
   // +--------+
+  
   int energy;
 
   // +--------------+------------------------------------------------
   // | Constructors |
   // +--------------+
+  
   public Organism() {
     this.energy = 0;
   } // Organism()
@@ -16,6 +18,7 @@ public class Organism {
   // +---------+-----------------------------------------------------------
   // | Methods |
   // +---------+
+  
   public void update() {
     this.incrementEnergy();
   } // update()

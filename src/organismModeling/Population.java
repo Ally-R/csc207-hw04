@@ -1,14 +1,18 @@
 package organismModeling;
 
+import java.util.Random;
+
 public class Population {
   // +--------+------------------------------------------------------
   // | Fields |
   // +--------+
+  
   Organism[] population;
 
   // +--------------+------------------------------------------------
   // | Constructors |
   // +--------------+
+  
   public Population(Pair<String, Integer>[] counts) throws IllegalArgumentException {
     int popsize = 0;
     for (int i = 0; i < counts.length; i++) {
@@ -37,15 +41,27 @@ public class Population {
   // +---------+-----------------------------------------------------------
   // | Methods |
   // +---------+
+  
+  void update() {
+    Random rand = new Random(System.currentTimeMillis());
+    for (int i = 0; i < this.population.length; i++) {
+      this.population[i].update();
+      if (this.population[i].cooperates()) {
+        this.population[i].decrementEnergy();
+        for (int k = 0; k < 8; k++) {
+          int index = rand.nextInt(this.population.length);
+          if (index == i) {
+            k--;
+          } else {
+            this.population[index].incrementEnergy();
+          } // else
+        } // for
+      } // if organism cooperates
+      if (this.population[i].getEnergy() >= 10) {
+        int index = rand.nextInt(this.population.length);
+        this.population[index] = this.population[i].reproduce();
+      } // if energy >= 10
+    } // for
+  } // update()
 
 } // class Population
-
-/*
-   public void checkType(String type) throws IllegalArgumentException {
-    if (!(type.equals("Cooperator") || type.equals("Defector")
-        || type.equals("PartialCooperator"))) {
-      throw new IllegalArgumentException(
-          "Input " + type + " invalid. Must be either Cooperator, Defector, or PartialCooperator.");
-    } // if
-  } // checkType(String type)
-*/
