@@ -3,6 +3,12 @@ package organismModeling;
 import java.lang.Integer;
 import java.io.PrintWriter;
 
+/**
+ * Simulates a population of organisms based on command-line input and prints results
+ * 
+ * @author Ally Rogers - rogersal@grinnell.edu
+ * @author Elise Bargman - bargmane@grinnell.edu
+ */
 public class ALifeSim {
   public static void main(String[] args) throws Exception {
     if (args.length != 4) {
