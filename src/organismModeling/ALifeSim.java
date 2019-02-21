@@ -23,13 +23,12 @@ public class ALifeSim {
     Population pop = new Population(inputCount);
     for (int i = 0; i < iterations; i++) {
       pop.update();
-      pen.println("update " + i); //****************************************
     } // for
 
     Pair<String, Integer>[] finalCounts = pop.getPopulationCounts();
     pen.println("After " + iterations + " updates:");
     pen.println(finalCounts[0].getLeft() + "      = " + finalCounts[0].getRight());
-    pen.println(finalCounts[1].getLeft() + "        = " + finalCounts[1].getRight());
+    pen.println(finalCounts[1].getLeft() + "          = " + finalCounts[1].getRight());
     pen.println(finalCounts[2].getLeft() + " = " + finalCounts[2].getRight());
     pen.println();
     pen.println("Mean Cooperation Probability = " + pop.calculateCooperationMean());

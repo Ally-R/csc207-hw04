@@ -35,6 +35,7 @@ public class Population {
               + " invalid. Must be either Cooperator, Defector, or PartialCooperator.");
         } // else
       } // for
+      place += counts[i].getRight();
     } // for
   } // Population(Pair<String, Integer>[] counts)
 
