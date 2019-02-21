@@ -27,7 +27,7 @@ public class ALifeSim {
 
     Pair<String, Integer>[] finalCounts = pop.getPopulationCounts();
     pen.println("After " + iterations + " updates:");
-    pen.println(finalCounts[0].getLeft() + "      = " + finalCounts[0].getRight());
+    pen.println(finalCounts[0].getLeft() + "        = " + finalCounts[0].getRight());
     pen.println(finalCounts[1].getLeft() + "          = " + finalCounts[1].getRight());
     pen.println(finalCounts[2].getLeft() + " = " + finalCounts[2].getRight());
     pen.println();

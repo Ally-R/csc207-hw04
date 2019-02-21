@@ -83,7 +83,7 @@ public class Population {
   public Pair<String, Integer>[] getPopulationCounts() {
     int popSize = this.population.length;
     Pair<String, Integer>[] popCount = (Pair<String, Integer>[]) (new Pair[3]);
-    popCount[0] = new Pair<String, Integer>("Collaborator", 0);
+    popCount[0] = new Pair<String, Integer>("Cooperator", 0);
     popCount[1] = new Pair<String, Integer>("Defector", 0);
     popCount[2] = new Pair<String, Integer>("PartialCooperator", 0);
     String currentType;
