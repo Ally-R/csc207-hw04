@@ -10,6 +10,13 @@ import java.io.PrintWriter;
  * @author Elise Bargman - bargmane@grinnell.edu
  */
 public class ALifeSim {
+  /**
+   * Simulate organism population
+   * 
+   * @pre Four command-line arguments given
+   * @pre All command-line arguments are non-negative ints
+   * @throws Exception if first precondition not met
+   */
   public static void main(String[] args) throws Exception {
     if (args.length != 4) {
       throw new Exception(

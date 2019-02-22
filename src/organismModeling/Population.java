@@ -26,15 +26,15 @@ public class Population {
    * Generate a new population of organisms based on given input
    * 
    * @pre each string in Pair is a valid organism subtype, case sensitive
-   * @pre each integer in Pair is > 0
+   * @pre each integer in Pair is >= 0
    * @throws IllegalArgumentException when first precondition not met
    * @throws Exception when second precondition not met
    */
   public Population(Pair<String, Integer>[] counts) throws IllegalArgumentException, Exception {
     int popsize = 0;
     for (int i = 0; i < counts.length; i++) {
-      if (counts[i].getRight() <= 0) {
-        throw new Exception("Number of " + counts[i].getLeft() + " must be > 0");
+      if (counts[i].getRight() < 0) {
+        throw new Exception("Number of " + counts[i].getLeft() + " must be >= 0");
       }
       popsize += counts[i].getRight();
     } // for
