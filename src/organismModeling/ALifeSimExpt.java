@@ -10,29 +10,9 @@ public class ALifeSimExpt {
       throw new Exception(
           "Usage java ALifeSimExpt: <#/cooperators> <#/defectors> <#/partial cooperators>");
     } // if wrong number of arguments, throw exception
-    pen.println("+------------------------------------------+");
-    pen.println("+ Tests for ALifeSim with population sizes + ");
-    pen.println("+       10 and 100, ten repeats each       +");
-    pen.println("+------------------------------------------+");
-    pen.println();
-    pen.println();
-    
-    pen.println("TESTING WITH ARGS: 10 " + args[0] + " " + args[1] + " " + args[2]);
-    pen.println("------------------------------");
-    pen.println();
-    for (int i = 0; i < 10; i++) {
-      pen.println("Test #" + (i+1) + " w/ 100 updates");
-      pen.println();
-      String[] arguments = new String[] {"10", args[0], args[1], args[2]};
-      ALifeSim.main(arguments);
-      pen.println();
-      pen.println("------");
-      pen.println();
-    } // for
-    
-    pen.println();
-    pen.println();
-    pen.println("********************************************");
+    pen.println("+--------------------------------------------------------+");
+    pen.println("+ Tests for ALifeSim: 10 trials with 100 iterations each +");
+    pen.println("+--------------------------------------------------------+");
     pen.println();
     pen.println();
     
@@ -40,7 +20,7 @@ public class ALifeSimExpt {
     pen.println("-------------------------------");
     pen.println();
     for (int i = 0; i < 10; i++) {
-      pen.println("Test #" + (i+1) + " w/ 100 updates");
+      pen.println("Test #" + (i+1));
       pen.println();
       String[] arguments = new String[] {"100", args[0], args[1], args[2]};
       ALifeSim.main(arguments);
