@@ -3,6 +3,14 @@
 ## Group members:
 Elise Bargman, Ally Rogers
 
+## Note about ALifeSim versus ALifeSimExpt
+We made two main methods in order to handle testing: ALifeSim and
+ALifeSimExpt. Our ALifeSim class is the same as what the assignment asked
+for. Our ALifeSimExpt class semi-automates the testing process required for the
+assignment. It takes similar input as ALifeSim, but does not take a
+population size. Instead, it runs ALifeSim with the given inputs for
+population sizes 10 and 100, for ten trials each (with different seeds each time.)
+
 ## Sources:
 * Random values: https://docs.oraecle.com/javase/7/docs/api/java/util/Random.html
 * Subclasses: https://www.cs.grinnell.edu/~rebelsky/Courses/CSC207/2019S/02/readings/inheritance.html
