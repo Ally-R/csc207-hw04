@@ -3,6 +3,8 @@
 ## Group members:
 Elise Bargman, Ally Rogers
 
+## Tests and Report/Analysis are in email, attached as PDF.
+
 ## Note about ALifeSim versus ALifeSimExpt
 We made two main methods in order to handle testing: ALifeSim and
 ALifeSimExpt. Our ALifeSim class is the same as what the assignment asked
