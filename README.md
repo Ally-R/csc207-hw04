@@ -1,4 +1,4 @@
-# csc207-hw04
+# csc207-hw04: Artifical Life
 
 ## Group members:
 Elise Bargman, Ally Rogers. Entirely pair programmed.
