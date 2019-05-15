@@ -1,8 +1,7 @@
 # csc207-hw04
 
 ## Group members:
-Elise Bargman, Ally Rogers
-Entirely pair programmed
+Elise Bargman, Ally Rogers. Entirely pair programmed.
 
 ## Tests and Report/Analysis in PDF
 
