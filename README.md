@@ -2,8 +2,9 @@
 
 ## Group members:
 Elise Bargman, Ally Rogers
+Entirely pair programmed
 
-## Tests and Report/Analysis are in email, attached as PDF.
+## Tests and Report/Analysis in PDF
 
 ## Note about ALifeSim versus ALifeSimExpt
 We made two main methods in order to handle testing: ALifeSim and
