@@ -1,0 +1,85 @@
++----------------------------------+---------------------------------+-----------+--------------+
+| Testing Report for Assignment 4  |  Elise Bargman and Ally Rogers  |  2/21/19  |  CSC 207.02  |
++----------------------------------+---------------------------------+-----------+--------------+
+
+10 organisms: 1 cooperator, 9 defectors
+---------------------------------------
+Prediction: The defectors will kill off the cooperator, likely around the 5th iteration because each update,
+eight out of nine of the defectors will get +2 energy, one from the cooperator, and the other from the update.
+
+Analysis: The overall mean cooperation probability was 0.07. The defectors dominated by far, however in some
+trials there was one cooperator left. This is slightly surprising, and we believe that with a higher number of
+trials it would eventually be replaced.
+
+100 organisms: 1 cooperator, 99 defectors
+-----------------------------------------
+Prediction: The defectors will kill off the cooperator in all trials, probably around the 9th or 10th iteration.
+Most defectors will first reproduce at this time, thus likely replacing the one cooperator. Specifically, by
+iteration 9, the cooperator (if still alive) will have given a total of 72 extra energy to random defectors, and
+therefore many will already be at energy 10, and a few will likely have already reproduced or been replaced.
+
+Analysis: The overall mean cooperation probability was 0.005. In half of the trials, the cooperator was killed
+off, but none had more than one. We were surprised that any survived at all, but we were correct that the
+defectors would continue to dominate.
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+10 organisms: 9 cooperator, 1 defectors
+---------------------------------------
+Prediction: The cooperators will likely take over early on, probably by the end of the second round, because after
+the first iteration alone, 72 energies will be distributed amongst the population. Therefore, the advantage that
+the defector has over the cooperators will be mostly mitigated. Even if the defector reproduces first, it and its
+offspring will be reset to 0, and the cooperators will likely take over again.
+
+Analysis: The overall mean cooperation probability was 0.58. Our results for this experiment were quite variable
+and surprising. Our prediction that the defector’s advantage would be mitigated was clearly disproven, since they
+increased in all trials, and strongly dominated in two trials.
+
+100 organisms: 99 cooperator, 1 defectors
+-----------------------------------------
+Prediction: The cooperators will almost definitely win for similar reasons as with 10 organisms. However, since
+the population is much larger, energy will have a higher chance of being more evenly distributed, therefore the
+chances that the defector could rise above the odds are smaller. Also, the defector makes up a proportionately
+smaller amount of the population than with a population of 10.
+
+Analysis: The overall mean cooperation probability was 0.524. This experiment was extremely variable, with
+cooperators dominating nearly completely in three cases (though never fully replacing the defectors). However,
+the overall mean is shows that our overall results were very close to a 50-50 split, and the rest of the trials
+were all across the board.
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+10 organisms: 3 cooperator, 3 defectors, 4 partial cooperators
+--------------------------------------------------------------
+Prediction: Most of the defectors and many partial cooperators will reproduce around rounds 2-4. Cooperators will
+also reproduce first around round 3-4 if not replaced, and will stay behind. Therefore the cooperators will all
+be replaced over time. The partial cooperators will likely not do as well as the defectors, but with a population
+size of just 10 that is nearly evenly distributed, this seems that it could be relatively variable.
+
+Analysis: The overall mean cooperation probability was 0.32. We found that the number of cooperators was one or
+zero, as predicted. However, the partial cooperators seemed to do slightly better than the defectors. This was
+variable, however, which disproves our prediction.
+
+100 organisms: 33 cooperator, 33 defectors, 34 partial cooperators
+------------------------------------------------------------------
+Prediction: This simulation will behave similarly to its counterpart population of 10, however, because it is a
+larger sample size, results will be less variable.
+
+Analysis: The overall mean cooperation probability was 0.3275. We found that the number of cooperators was
+consistently under ten, but never zero. As for the defectors and partial cooperators, neither went above 70% of
+total, and results favored them equally overall. These results did support our overall hypothesis, however we were
+incorrect that the results would be minimally variable.
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+Final Conclusion: We thought that in most cases, one population would get entirely replaced. However, we found
+that our results only supported this two cases, both when the defectors started as the vast majority. However,
+even in these cases, some cooperators nonetheless survived in some trials. We believe that this experiment
+demonstrates the sheer complexity and variability of biological systems, even when modeled in extremely simplified
+ways.
