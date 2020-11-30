@@ -3,6 +3,10 @@
 ## Group members:
 Elise Bargman, Ally Rogers. Entirely pair programmed.
 
+## Project Summary:
+Created a simple organism modeling program that simulates three classes of organisms
+(defectors, cooperators, and partial cooperators) as they compete to survive and reproduce.
+
 ## Tests and Report/Analysis in PDF
 
 ## Note about ALifeSim versus ALifeSimExpt
