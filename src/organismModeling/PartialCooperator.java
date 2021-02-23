@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Creates a PartialCooperator organism.
  * 
- * @author Ally Rogers - rogersal@grinnell.edu
+ * @author Ally
  * @author Elise Bargman - bargmane@grinnell.edu
  */
 public class PartialCooperator extends Organism {
