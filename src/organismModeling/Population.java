@@ -6,7 +6,7 @@ import java.util.Random;
  * Creates an population of Organisms.
  * 
  * @author Elise Bargman - bargmane@grinnell.edu
- * @author Ally Rogers - rogersal@grinnell.edu
+ * @author Ally
  */
 public class Population {
   // +--------+------------------------------------------------------
