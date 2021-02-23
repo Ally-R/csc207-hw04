@@ -1,7 +1,7 @@
 # Artificial Life: csc207-hw04
 
 ## Group members:
-Elise Bargman, Ally Rogers. Entirely pair programmed.
+Elise Bargman, Ally R. Entirely pair programmed.
 
 ## Project Summary:
 Created a simple organism modeling program that simulates a population containing three classes of organisms
