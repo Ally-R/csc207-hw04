@@ -3,7 +3,7 @@ package organismModeling;
 /**
  * Creates an Organism. Super for all organism subtypes used in Poulation.java
  * 
- * @author Ally Rogers - rogersal@grinnell.edu
+ * @author Ally
  * @author Elise Bargman - bargmane@grinnell.edu
  */
 public class Organism {
