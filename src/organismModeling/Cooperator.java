@@ -3,7 +3,7 @@ package organismModeling;
 /**
  * Creates a Cooperator organism.
  * 
- * @author Ally Rogers - rogersal@grinnell.edu
+ * @author Ally
  * @author Elise Bargman - bargmane@grinnell.edu
  */
 public class Cooperator extends Organism {
